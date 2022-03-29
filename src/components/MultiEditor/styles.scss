@@ -1,0 +1,69 @@
+.header {
+  border-bottom: 1px solid #777;
+  padding-bottom: 4px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  > .toolbar {
+    background: none;
+
+    > .custom {
+      margin-left: 0.2em;
+    }
+  }
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  > .itemEditor {
+    display: flex;
+    margin: 0 0.2em 0.2em 0;
+
+    > input {
+      margin-right: 0.2em;
+    }
+  }
+
+  > .item {
+    height: 2.2em;
+    padding: 0.3em;
+    margin: 0 0.2em 0.2em 0;
+    background: #fcfcfc;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.active {
+      background: rgba(10, 114, 202, 0.81) !important;
+      color: white;
+      text-shadow: none !important;
+      box-shadow: inset 1px 1px 2px rgba(1, 13, 23, 0.18),
+        inset -1px -1px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
+}
+
+.footer {
+  > .addItem {
+    display: flex;
+
+    > input {
+      margin-right: 0.2em;
+    }
+  }
+}
+
+.editAllInput {
+  width: 100%;
+}

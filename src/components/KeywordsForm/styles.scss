@@ -1,0 +1,39 @@
+.searchForm {
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  > .item {
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+
+    > .label {
+      margin-right: 0.5em;
+    }
+  }
+}
+
+.keywordsMerging {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+
+  > .content {
+    flex: 1;
+    display: flex;
+    padding: 10px;
+
+    > .separator {
+      margin: 0 10px;
+      width: 1px;
+      border-left: 1px solid #aaa;
+      border-right: 1px solid #eee;
+    }
+
+    > .editor {
+      flex: 1;
+    }
+  }
+}

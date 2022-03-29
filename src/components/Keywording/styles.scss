@@ -1,0 +1,15 @@
+.container {
+  position: relative;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3em;
+}
+
+.textarea {
+  resize: "vertical";
+  width: 100%;
+  flex: 1;
+}

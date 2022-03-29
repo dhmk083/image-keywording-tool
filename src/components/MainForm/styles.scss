@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.split {
+  position: relative;
+  flex: 1;
+}
+
+.panelRight {
+  padding: 0.5em;
+}

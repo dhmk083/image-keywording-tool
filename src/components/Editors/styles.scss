@@ -1,0 +1,47 @@
+$color: peru;
+
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.single {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.2em 0;
+
+  > * {
+    flex: 1;
+  }
+
+  .value {
+    width: 100%;
+  }
+
+  &.notSaved {
+    .label {
+      color: $color;
+      font-style: italic;
+    }
+
+    .value {
+      border: 1px solid $color;
+    }
+  }
+}
+
+.multi {
+  &.notSaved {
+    .label {
+      color: $color;
+      font-style: italic;
+    }
+  }
+
+  .itemNotSaved {
+    border-color: #fece72;
+    color: #777;
+    background: #f3ecdf;
+  }
+}

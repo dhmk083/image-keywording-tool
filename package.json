@@ -1,0 +1,63 @@
+{
+  "name": "@dhmk/image-keywording-tool",
+  "description": "A tool that helps you edit image metadata",
+  "version": "1.0.0",
+  "author": "dhmk083@gmail.com",
+  "private": true,
+  "main": "main.js",
+  "build": {
+    "productName": "Image Keywording Tool",
+    "files": [
+      "build",
+      "*.html",
+      "main.js"
+    ],
+    "win": {
+      "target": [
+        "portable"
+      ]
+    }
+  },
+  "scripts": {
+    "start": "webpack -w --mode development & electron .",
+    "build": "rm -rf build && webpack --mode production",
+    "pack": "electron-builder --dir",
+    "dist": "rm -rf dist && electron-builder"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-split-pane": "^0.1.67",
+    "css-loader": "^5.0.1",
+    "dotenv-webpack": "^7.1.0",
+    "electron": "^11.1.1",
+    "electron-builder": "^22.14.13",
+    "file-loader": "^6.2.0",
+    "sass": "^1.32.5",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.13",
+    "tsconfig-paths-webpack-plugin": "^3.5.2",
+    "typescript": "^4.3.5",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "@dhmk/atom": "^1.0.5",
+    "@dhmk/atom-react": "^0.0.3",
+    "@dhmk/react": "^3.6.1",
+    "@dhmk/utils": "^3.3.0",
+    "chokidar": "^3.5.1",
+    "classnames": "^2.2.6",
+    "electron-context-menu": "^3.1.1",
+    "electron-reloader": "^1.2.1",
+    "electron-store": "^7.0.2",
+    "formik": "^2.2.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-split-pane": "^0.1.92",
+    "react-toast-notifications": "^2.4.0",
+    "yup": "^0.32.8"
+  }
+}
